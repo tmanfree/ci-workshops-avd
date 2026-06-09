@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Management](#management)
+  - [Banner](#banner)
   - [Management Interfaces](#management-interfaces)
   - [DNS Domain](#dns-domain)
   - [IP Name Servers](#ip-name-servers)
@@ -46,6 +47,16 @@
   - [VRF Instances Device Configuration](#vrf-instances-device-configuration)
 
 ## Management
+
+### Banner
+
+#### MOTD Banner
+
+```text
+This is a multiline banner, wow. 
+Here is another line
+EOF
+```
 
 ### Management Interfaces
 

@@ -3,6 +3,8 @@ aaa_authorization:
     default: local
 aaa_root:
   disabled: true
+banners:
+  motd: "This is a multiline banner, wow. \nHere is another line\nEOF"
 config_end: true
 daemon_terminattr:
   cvaddrs:
