@@ -3,6 +3,14 @@ aaa_authorization:
     default: local
 aaa_root:
   disabled: true
+banners:
+  motd: 'Line1
+
+    Line 2
+
+    EOF
+
+    '
 config_end: true
 daemon_terminattr:
   cvaddrs:
@@ -88,6 +96,15 @@ local_users:
   sha512_password: $6$73ce955d53739406$9S6xrXbIUYbUEohHlg4V4JRT7e1jENE05k/alXZvVqsvJ2J5zL/6XzuE2NI0fbKhElnI/c44SPwjr2R4I69iN1
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+xOm84HeURy1VvIHUNnaoszjenmAs4yYM38I+Il7wr7iHoy/bh9/gjLk6zecQmi6gB5Zu0L80N0W35Ga1I6etkk66mBBqF+v9glF96tA4Tev0xFhrBYfNqu5/AzjytJMBcP7h5yeLXFbL1m0PgEr8di4auPBbQTXLqPPVtEtmZXuuK5Y9UmO7+Bupx+4E2zNMdieqDzHOwV8F0u02PHRYrEGwAtCLbHL+FXNpBlw1AC6ZwBqMC2j8yJhjfBrvek0qpOyxsu9SIzCGQAeZCcUHRjd8ndPRTfxO1cp0TSzILHwFBRd1+ht7UlqxI+JMy1jQ8QGv37KEbS0GzuMAXo7J
     arista@university-of-alberta-atd-11-4e304987-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 management_api_http:
   enable_https: true
   enable_vrfs:
